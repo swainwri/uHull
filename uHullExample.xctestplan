@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "15E95937-83DC-4BDC-86B3-A4E3F53ABE39",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:uHull.xcodeproj",
+      "identifier" : "E30230642D01C74300950C8A",
+      "name" : "uHullExample"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:uHull.xcodeproj",
+        "identifier" : "E30230792D01C74500950C8A",
+        "name" : "uHullExampleTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:uHull.xcodeproj",
+        "identifier" : "E30230832D01C74500950C8A",
+        "name" : "uHullExampleUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
