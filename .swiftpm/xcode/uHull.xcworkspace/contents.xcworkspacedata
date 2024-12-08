@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "self:"
+      name = "uHull">
+      <Group
+         location = "group:Tests"
+         name = "Tests">
+         <Group
+            location = "group:uHullTests"
+            name = "uHullTests">
+            <FileRef
+               location = "group:uHullTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Package.swift">
+      </FileRef>
+      <Group
+         location = "group:Sources"
+         name = "Sources">
+         <Group
+            location = "group:uHull"
+            name = "uHull">
+            <FileRef
+               location = "group:uHull.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>
