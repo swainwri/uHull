@@ -34,7 +34,7 @@ let points = [
     ASPoint(x: 0.25, y: 0.5),
     ASPoint(x: 0.75, y: 0.5)
 ]
-let polygons = Alpha_Shape().getAlphaShapePolygons(coordinates_points: point, alpha: 1.5)
+let polygons = uHull.Alpha_Shape().getAlphaShapePolygons(coordinates_points: point, alpha: 1.5)
 ```
 
 The concave hull obtained for these points is formed by a single polygon
@@ -75,7 +75,7 @@ let points = [
     ASPoint(x: 0.75, y: 0.5)
 ]
 
-let polygons = Alpha_shape().getAlphaShapePolygons(coordinates_points: points, alpha: 2 * 1.5)
+let polygons = uHull.Alpha_shape().getAlphaShapePolygons(coordinates_points: points, alpha: 2 * 1.5)
 ```
 
 ![image](imgs/concave_hull_doubling_default_alpha_value.png)
@@ -101,7 +101,7 @@ let points = [
     ASPoint(x: 0.75, y: 0.5)
 ]
 
-let polygons = Alpha_shape().getAlphaShapePolygons(coordinates_points:points, distance: manhattan_distance)
+let polygons = uHull.Alpha_shape().getAlphaShapePolygons(coordinates_points:points, distance: manhattan_distance)
 ```
 
 ![image](imgs/concave_hull_with_manhattan_distance.png)
