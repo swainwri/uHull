@@ -1,16 +1,22 @@
 //
 //  Geometry.swift
-//  ChartsDemo-iOS-Swift
+//  uHull-iOS-Swift
 //
 //  Created by Steve Wainwright on 22/11/2024.
-//  Copyright © 2024 dcg. All rights reserved.
+//  Copyright © 2024 whichtoolface.com. All rights reserved.
+//
+// ported from https://github.com/luanleonardo/uhull python library
 //
 
-import UIKit
+import Foundation
 
-class Geometry {
+public class Geometry {
     
-    func euclidean_distance(coord1: ASPoint, coord2: ASPoint) -> Double {
+    public init() {
+        
+    }
+    
+    public func euclidean_distance(coord1: ASPoint, coord2: ASPoint) -> Double {
         
         //    Calculate the Euclidean distance between coordinates.
         //
@@ -33,7 +39,7 @@ class Geometry {
         return sqrt(pow(coord1.x - coord2.x, 2) + pow(coord1.y - coord2.y, 2))
     }
     
-    func haversine_distance(coord1: ASPoint, coord2: ASPoint) -> Double {
+    public func haversine_distance(coord1: ASPoint, coord2: ASPoint) -> Double {
         
         //    Calculate the Haversine distance between coordinates.
         //
