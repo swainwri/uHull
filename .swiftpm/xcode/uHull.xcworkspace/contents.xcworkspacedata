@@ -2,32 +2,90 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "self:"
+      location = "container:../.."
       name = "uHull">
       <Group
-         location = "group:Tests"
-         name = "Tests">
+         location = "group:uHull"
+         name = "uHull">
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <FileRef
+            location = "group:Package.swift">
+         </FileRef>
          <Group
-            location = "group:uHullTests"
-            name = "uHullTests">
+            location = "group:imgs"
+            name = "imgs">
             <FileRef
-               location = "group:uHullTests.swift">
+               location = "group:concave_hull_points_set.png">
             </FileRef>
+            <FileRef
+               location = "group:concave_hull_with_manhattan_distance.png">
+            </FileRef>
+            <FileRef
+               location = "group:set_of_points.png">
+            </FileRef>
+            <FileRef
+               location = "group:concave_hull_doubling_default_alpha_value.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Tests"
+            name = "Tests">
+            <FileRef
+               location = "group:Alpha_ShapeTests.swift">
+            </FileRef>
+            <FileRef
+               location = "group:GeometryTests.swift">
+            </FileRef>
+            <FileRef
+               location = "group:GraphTests.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Sources"
+            name = "Sources">
+            <FileRef
+               location = "group:Alpha_Shape.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Geometry.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Graph.swift">
+            </FileRef>
+            <Group
+               location = "group:Triangulation"
+               name = "Triangulation">
+               <FileRef
+                  location = "group:TriangleInterpolation.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Circumcircle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Edge.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Point.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Polygon.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PointNode.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Triangle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Delaunay.swift">
+               </FileRef>
+            </Group>
          </Group>
       </Group>
       <FileRef
-         location = "group:Package.swift">
+         location = "group:uHullExample/uHullExample.xcodeproj">
       </FileRef>
-      <Group
-         location = "group:Sources"
-         name = "Sources">
-         <Group
-            location = "group:uHull"
-            name = "uHull">
-            <FileRef
-               location = "group:uHull.swift">
-            </FileRef>
-         </Group>
-      </Group>
    </Group>
 </Workspace>

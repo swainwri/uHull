@@ -4,6 +4,8 @@
 //
 //  Created by Steve Wainwright on 06/12/2024.
 //
+// ported from https://github.com/luanleonardo/uhull python library
+//
 
 import Testing
 @testable import uHull
@@ -12,7 +14,7 @@ import Testing
 
 // MARK: Tests
 
-class GeometryTests {
+struct GeometryTests {
     
     // Defines a set of points that form a simple square-shaped polygon of side 1.0.
     let coordinates_points: [ASPoint] =  [ ASPoint(x: 0, y: 0), ASPoint(x: 0, y: 1), ASPoint(x: 1, y: 1), ASPoint(x: 1, y: 0) ]

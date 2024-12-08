@@ -3,11 +3,13 @@
 //  uHull-iOS-Swift
 //
 //  Created by Steve Wainwright on 23/11/2024.
-//  Copyright © 2024 dcg. All rights reserved.
+//  Copyright © 2024 whichtoolface.com. All rights reserved.
+//
+// ported from https://github.com/luanleonardo/uhull python library
 //
 
 import Foundation
-internal import SigmaSwiftStatistics
+import SigmaSwiftStatistics
 
 public struct ASPoint: Hashable {
     

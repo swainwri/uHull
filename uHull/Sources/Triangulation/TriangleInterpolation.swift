@@ -8,9 +8,9 @@
 
 import Foundation
 
-class TriangleInterpolation: NSObject {
+public class TriangleInterpolation: NSObject {
     
-    class func triangle_area(p1x: Double, p1y: Double, p2x: Double, p2y: Double, p3x: Double, p3y: Double) -> Double {
+    public class func triangle_area(p1x: Double, p1y: Double, p2x: Double, p2y: Double, p3x: Double, p3y: Double) -> Double {
         //****************************************************************************80
         //
         //  Purpose:
@@ -58,7 +58,7 @@ class TriangleInterpolation: NSObject {
         return (p1x - p3x) * (p2y - p3y) - (p2x - p3x) * (p1y - p3y)
     }
 
-    class func triangle_interpolate_linear( m: Int, n: Int, p1: [Double], p2: [Double], p3: [Double], p: [Double], v1: [Double], v2: [Double], v3: [Double]) -> [Double] {
+    public class func triangle_interpolate_linear( m: Int, n: Int, p1: [Double], p2: [Double], p3: [Double], p: [Double], v1: [Double], v2: [Double], v3: [Double]) -> [Double] {
 
     //****************************************************************************80
     //
@@ -175,7 +175,7 @@ class TriangleInterpolation: NSObject {
         }
     }
     
-    class func triangle_extrapolate_linear_singleton( p1: [Double], p2: [Double], p: [Double], v1: Double, v2: Double) -> Double {
+    public class func triangle_extrapolate_linear_singleton( p1: [Double], p2: [Double], p: [Double], v1: Double, v2: Double) -> Double {
     
         let sx: Double = p[0] - p1[0]
         let sy: Double = p[1] - p1[1]

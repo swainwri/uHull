@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E35127F62D053DB10006AE8F /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = E35127F52D053DB10006AE8F /* KDTree */; };
+		E35127FA2D053DCC0006AE8F /* SigmaSwiftStatistics in Frameworks */ = {isa = PBXBuildFile; productRef = E35127F92D053DCC0006AE8F /* SigmaSwiftStatistics */; };
+		E35128092D0552190006AE8F /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E35128082D0552190006AE8F /* uHull */; };
+		E351280C2D0563FA0006AE8F /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E351280B2D0563FA0006AE8F /* uHull */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E35127C02D053B610006AE8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35128092D0552190006AE8F /* uHull in Frameworks */,
+				E35127FA2D053DCC0006AE8F /* SigmaSwiftStatistics in Frameworks */,
+				E35127F62D053DB10006AE8F /* KDTree in Frameworks */,
+				E351280C2D0563FA0006AE8F /* uHull in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +102,7 @@
 				E35127AB2D053B5F0006AE8F /* uHullExample */,
 				E35127C22D053B610006AE8F /* uHullExampleTests */,
 				E35127CC2D053B610006AE8F /* uHullExampleUITests */,
+				E35127F82D053DCC0006AE8F /* Frameworks */,
 				E35127AA2D053B5F0006AE8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +115,13 @@
 				E35127C92D053B610006AE8F /* uHullExampleUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E35127F82D053DCC0006AE8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +144,10 @@
 			);
 			name = uHullExample;
 			packageProductDependencies = (
+				E35127F52D053DB10006AE8F /* KDTree */,
+				E35127F92D053DCC0006AE8F /* SigmaSwiftStatistics */,
+				E35128082D0552190006AE8F /* uHull */,
+				E351280B2D0563FA0006AE8F /* uHull */,
 			);
 			productName = uHullExample;
 			productReference = E35127A92D053B5F0006AE8F /* uHullExample.app */;
@@ -205,9 +228,16 @@
 			knownRegions = (
 				en,
 				Base,
+				"Base 2",
+				"base 2",
 			);
 			mainGroup = E35127A02D053B5F0006AE8F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E35127F42D053DB10006AE8F /* XCRemoteSwiftPackageReference "KDTree" */,
+				E35127F72D053DBE0006AE8F /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */,
+				E351280A2D0563FA0006AE8F /* XCLocalSwiftPackageReference "../uHull" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E35127AA2D053B5F0006AE8F /* Products */;
 			projectDirPath = "";
@@ -569,6 +599,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E351280A2D0563FA0006AE8F /* XCLocalSwiftPackageReference "../uHull" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../uHull;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E35127F42D053DB10006AE8F /* XCRemoteSwiftPackageReference "KDTree" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bersaelor/KDTree";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+		E35127F72D053DBE0006AE8F /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/SigmaSwiftStatistics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E35127F52D053DB10006AE8F /* KDTree */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E35127F42D053DB10006AE8F /* XCRemoteSwiftPackageReference "KDTree" */;
+			productName = KDTree;
+		};
+		E35127F92D053DCC0006AE8F /* SigmaSwiftStatistics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E35127F72D053DBE0006AE8F /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */;
+			productName = SigmaSwiftStatistics;
+		};
+		E35128082D0552190006AE8F /* uHull */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uHull;
+		};
+		E351280B2D0563FA0006AE8F /* uHull */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uHull;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E35127A12D053B5F0006AE8F /* Project object */;
 }

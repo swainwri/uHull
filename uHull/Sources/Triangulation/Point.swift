@@ -88,8 +88,8 @@ extension Point: Equatable {
     }
 }
 
-extension Point: KDTreePoint {
-    public static var dimensions = 2
+extension Point: @preconcurrency KDTreePoint {
+    @MainActor public static var dimensions = 2
     
     public func kdDimension(_ dimension: Int) -> Double {
         return dimension == 0 ? Double(self.x) : Double(self.y)

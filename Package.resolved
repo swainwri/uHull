@@ -1,0 +1,24 @@
+{
+  "originHash" : "d9f6dffb1a3353a6fd272893b0503cb4c331e06d99700bfff43404ecf7392f8d",
+  "pins" : [
+    {
+      "identity" : "kdtree",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Bersaelor/KDTree",
+      "state" : {
+        "revision" : "35d14064d48d92a0c2c1215b93a3118f558b2e6b",
+        "version" : "1.4.2"
+      }
+    },
+    {
+      "identity" : "sigmaswiftstatistics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/SigmaSwiftStatistics.git",
+      "state" : {
+        "revision" : "d36db09f97a1739edc8c63897220c7ecbb5de684",
+        "version" : "9.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
