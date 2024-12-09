@@ -16,7 +16,7 @@ Concave hull for 2D points
 
 Suppose we want to find a concave hull for the following set of points:
 
-![image](uHull/img/set_of_points.png)
+![image](uHull/imgs/set_of_points.png)
 
 We can find the `polygons` that form the concave hull of the set as
 follows:
@@ -40,7 +40,7 @@ let polygons = Alpha_Shape().getAlphaShapePolygons(coordinates_points: point, al
 The concave hull obtained for these points is formed by a single polygon
 as follows:
 
-![image](uHull/img/concave_hull_points_set.png)
+![image](uHull/imgs/concave_hull_points_set.png)
 
 Note
 ----
@@ -78,7 +78,7 @@ let points = [
 let polygons = Alpha_shape().getAlphaShapePolygons(coordinates_points: points, alpha: 2 * 1.5)
 ```
 
-![image](uHull/img/concave_hull_doubling_default_alpha_value.png)
+![image](uHull/imgs/concave_hull_doubling_default_alpha_value.png)
 
 As another example let\'s define a distance function and get concave
 hull with it.
@@ -104,12 +104,12 @@ let points = [
 let polygons = Alpha_shape().getAlphaShapePolygons(coordinates_points:points, distance: manhattan_distance)
 ```
 
-![image](uHull/img/concave_hull_with_manhattan_distance.png)
+![image](uHull/imgs/concave_hull_with_manhattan_distance.png)
 
 
 Example Project uHullExample
 
-![image](uHull/img/uHullExample.png)
+![image](uHull/imgs/uHullExample.png)
 
 ## Installation
 
