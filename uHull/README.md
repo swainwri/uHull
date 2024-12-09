@@ -107,6 +107,10 @@ let polygons = Alpha_shape().getAlphaShapePolygons(coordinates_points:points, di
 ![image](img/concave_hull_with_manhattan_distance.png)
 
 
+Example Project uHullExample
+
+![image](img/uHullExample.png)
+
 ## Installation
 
 In Xcode, open `File` -> `Swift Packages` -> `Add Package Dependency` and copy the project url into the text field:

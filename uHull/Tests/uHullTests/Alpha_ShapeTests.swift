@@ -13,6 +13,15 @@ import Foundation
 @testable internal import KDTree
 @testable internal import SigmaSwiftStatistics
 
+@Test func example() async throws {
+    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    let tests = Alpha_ShapeTests()
+    
+    tests.tests_get_alpha_shape_polygons_in_square_set()
+    tests.tests_get_alpha_shape_polygons_in_circular_crown_set()
+    
+}
+
 
 // MARK: Tests
 

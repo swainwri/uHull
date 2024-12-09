@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "container:../.."
+      location = "absolute:/Users/stevewainwright/Documents/GitHub/uHull"
       name = "uHull">
       <Group
          location = "group:uHull"
@@ -16,6 +16,9 @@
          <Group
             location = "group:imgs"
             name = "imgs">
+            <FileRef
+               location = "group:uHullExample.png">
+            </FileRef>
             <FileRef
                location = "group:concave_hull_points_set.png">
             </FileRef>
@@ -32,56 +35,18 @@
          <Group
             location = "group:Tests"
             name = "Tests">
-            <FileRef
-               location = "group:Alpha_ShapeTests.swift">
-            </FileRef>
-            <FileRef
-               location = "group:GeometryTests.swift">
-            </FileRef>
-            <FileRef
-               location = "group:GraphTests.swift">
-            </FileRef>
+            <FileSystemSynchronizedGroup
+               location = "group:uHullTests"
+               name = "uHullTests">
+            </FileSystemSynchronizedGroup>
          </Group>
          <Group
             location = "group:Sources"
             name = "Sources">
-            <FileRef
-               location = "group:Alpha_Shape.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Geometry.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Graph.swift">
-            </FileRef>
-            <Group
-               location = "group:Triangulation"
-               name = "Triangulation">
-               <FileRef
-                  location = "group:TriangleInterpolation.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Circumcircle.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Edge.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Point.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Polygon.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:PointNode.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Triangle.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Delaunay.swift">
-               </FileRef>
-            </Group>
+            <FileSystemSynchronizedGroup
+               location = "group:uHull"
+               name = "uHull">
+            </FileSystemSynchronizedGroup>
          </Group>
       </Group>
       <FileRef

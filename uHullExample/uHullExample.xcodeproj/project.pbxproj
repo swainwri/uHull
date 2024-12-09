@@ -11,6 +11,8 @@
 		E35127FA2D053DCC0006AE8F /* SigmaSwiftStatistics in Frameworks */ = {isa = PBXBuildFile; productRef = E35127F92D053DCC0006AE8F /* SigmaSwiftStatistics */; };
 		E35128092D0552190006AE8F /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E35128082D0552190006AE8F /* uHull */; };
 		E351280C2D0563FA0006AE8F /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E351280B2D0563FA0006AE8F /* uHull */; };
+		E3732C122D067F02003B5172 /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E3732C112D067F02003B5172 /* uHull */; };
+		E3EC6CD42D05CABC003095EA /* uHull in Frameworks */ = {isa = PBXBuildFile; productRef = E3EC6CD32D05CABC003095EA /* uHull */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EC6CD42D05CABC003095EA /* uHull in Frameworks */,
 				E35128092D0552190006AE8F /* uHull in Frameworks */,
 				E35127FA2D053DCC0006AE8F /* SigmaSwiftStatistics in Frameworks */,
+				E3732C122D067F02003B5172 /* uHull in Frameworks */,
 				E35127F62D053DB10006AE8F /* KDTree in Frameworks */,
 				E351280C2D0563FA0006AE8F /* uHull in Frameworks */,
 			);
@@ -148,6 +152,8 @@
 				E35127F92D053DCC0006AE8F /* SigmaSwiftStatistics */,
 				E35128082D0552190006AE8F /* uHull */,
 				E351280B2D0563FA0006AE8F /* uHull */,
+				E3EC6CD32D05CABC003095EA /* uHull */,
+				E3732C112D067F02003B5172 /* uHull */,
 			);
 			productName = uHullExample;
 			productReference = E35127A92D053B5F0006AE8F /* uHullExample.app */;
@@ -236,7 +242,7 @@
 			packageReferences = (
 				E35127F42D053DB10006AE8F /* XCRemoteSwiftPackageReference "KDTree" */,
 				E35127F72D053DBE0006AE8F /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */,
-				E351280A2D0563FA0006AE8F /* XCLocalSwiftPackageReference "../uHull" */,
+				E3732C102D067F02003B5172 /* XCLocalSwiftPackageReference "../uHull" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E35127AA2D053B5F0006AE8F /* Products */;
@@ -601,7 +607,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		E351280A2D0563FA0006AE8F /* XCLocalSwiftPackageReference "../uHull" */ = {
+		E3732C102D067F02003B5172 /* XCLocalSwiftPackageReference "../uHull" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../uHull;
 		};
@@ -642,6 +648,14 @@
 			productName = uHull;
 		};
 		E351280B2D0563FA0006AE8F /* uHull */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uHull;
+		};
+		E3732C112D067F02003B5172 /* uHull */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uHull;
+		};
+		E3EC6CD32D05CABC003095EA /* uHull */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = uHull;
 		};

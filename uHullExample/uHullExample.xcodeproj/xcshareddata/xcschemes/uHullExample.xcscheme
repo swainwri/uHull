@@ -30,7 +30,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../uHull/Tests/uHull.xctestplan">
+            reference = "container:../uHull/Tests/uHull.xctestplan"
+            default = "YES">
          </TestPlanReference>
       </TestPlans>
       <Testables>

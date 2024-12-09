@@ -8,12 +8,13 @@
 import Testing
 @testable import uHullExample
 @testable import uHull
+@testable import uHullTests
 
 struct uHullExampleTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        uHull.
+        #expect(1 == 2, "not equal")
     }
 
 }
